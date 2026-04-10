@@ -15,7 +15,12 @@ const cors = require('cors')
 // console.log("Hello")
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: [
+        'http://localhost:5173',
+        'https://code-sprint-navy.vercel.app',
+        'https://code-sprint-git-main-sivaramasastrys-projects.vercel.app',
+        'https://code-sprint-b237gxdwe-sivaramasastrys-projects.vercel.app'
+    ],
     credentials: true 
 }))
 
