@@ -1,6 +1,7 @@
 const express = require('express')
+const path = require('path');
 const app = express();
-require('dotenv').config();
+require('dotenv').config({ path: path.join(__dirname, '../.env') });
 const main =  require('./config/db')
 const cookieParser =  require('cookie-parser');
 const authRouter = require("./routes/userAuth");
